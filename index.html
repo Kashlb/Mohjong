@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Mahjong Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>MAHJONG</h1>
+    <p>Build your groups of four!</p>
+  </header>
+
+  <main>
+    <div class="info">
+      <span id="remaining">Tiles remaining: 0</span>
+      <span id="status">Draw a tile to start</span>
+    </div>
+
+    <section>
+      <h2>Your Hand</h2>
+      <div id="hand" class="tiles"></div>
+    </section>
+
+    <div class="buttons">
+      <button id="draw">Draw Tile</button>
+      <button id="discard">Discard Selected</button>
+      <button id="check">Check Groups</button>
+    </div>
+
+    <section>
+      <h2>Your Groups</h2>
+      <div id="groups"></div>
+    </section>
+
+    <section>
+      <h2>Discard Pile</h2>
+      <div id="discards" class="tiles"></div>
+    </section>
+
+    <button id="restart" class="restart">New Game</button>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
